@@ -4,7 +4,7 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Chris Warren with help from Cheria Artis & Delvric Tezeno"
+__author__ = "Chris Warren with help from Tiffany McLean"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -42,10 +42,10 @@ def verbing(s):
 
 
 def not_bad(s):
-    str1 = s.split("bad")
-    str2 = str1[0].split("not")
-    if len(str1) > 1 < len(str2):
-        return str2[0] + "good" + "bad".join(str1[1:])
+    isNot = s.find("not")
+    isBad = s.find("bad")
+    if isBad > isNot:
+        s = s.replace(s[isNot:(isBad + 3)], "good")
     return s
 
 
@@ -60,8 +60,24 @@ def not_bad(s):
 
 
 def front_back(a, b):
+    isStrA = len(a)
+    isStrB = len(b)
+    if isStrA % 2 == 0:
+        isStrALength = isStrA // 2
+    else:
+        isStrALength = (isStrA // 2) + 1
     # your code here
-    return
+    if isStrB % 2 == 0:
+        isStrBLength = isStrB // 2
+    else:
+        isStrBLength = (isStrB // 2) + 1
+    
+    isStrAFront = a[0:isStrALength]
+    isStrABack = a[isStrALength:]
+    isStrBFront = b[0:isStrBLength]
+    isStrBBack = b[isStrBLength:]
+    
+    return isStrAFront + isStrBFront + isStrABack + isStrBBack
 
 
 # Provided simple test() function used in main() to print
