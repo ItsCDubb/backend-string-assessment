@@ -4,7 +4,7 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Chris Warren with help from Tiffany McLean"
+__author__ = "Chris Warren with help from Cheria Artis, Delvric Tenezo, & Tiffany McLean"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
