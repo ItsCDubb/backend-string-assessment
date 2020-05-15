@@ -66,7 +66,7 @@ def front_back(a, b):
         isStrALength = isStrA // 2
     else:
         isStrALength = (isStrA // 2) + 1
-    # your code here
+
     if isStrB % 2 == 0:
         isStrBLength = isStrB // 2
     else:
